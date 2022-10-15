@@ -129,9 +129,6 @@
 <script>
 export default {
   name: "header",
-  props: {
-    user_name: String,
-  },
 };
 </script>
 <style scoped>
