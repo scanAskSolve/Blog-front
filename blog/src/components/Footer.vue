@@ -12,7 +12,7 @@
 export default {
   name: "fooder",
   data() {
-    return;
+    return{}
   },
 };
 </script>
