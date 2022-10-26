@@ -9,7 +9,7 @@
           <h2>林奕君<br /><span>Software Developer</span></h2>
         </div>
         <div class="contactInfo">
-          <div class="title">Contact Info</div>
+          <h3 class="title">Contact Info</h3>
           <ul>
             <li>
               <span class="icon"><i class="fa-regular fa-envelope"></i></span>
@@ -25,8 +25,58 @@
             </li>
           </ul>
         </div>
+        <div class="contactInfo education">
+          <h3 class="title">工作經歷</h3>
+          <ul>
+            <li>
+              <h5>2021-2~2021-8</h5>
+              <h4>鈊象電子</h4>
+              <h4>後端工程師</h4>
+            </li>
+            <li>
+              <h5>2022-9~Now</h5>
+              <h4>意藍資訊</h4>
+              <h4>工程師</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="contactInfo language">
+          <h3 class="title">語言</h3>
+          <ul>
+            <li>
+              <span class="text">中文</span>
+              <span class="percent">
+                <div style="width: 90%"></div>
+              </span>
+            </li>
+            <li>
+              <span class="text">英文</span>
+              <span class="percent">
+                <div style="width: 50%"></div>
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="right_Side"></div>
+      <div class="right_Side">
+        <div class="about">
+          <h2 class="title2">Profile</h2>
+          <p>葛人自我介紹</p>
+        </div>
+        <div class="about">
+          <h2 class="title2">經驗</h2>
+          <div class="box">
+            <div class="year_company">
+              <h5>2021-Present</h5>
+              <h5>意藍科技</h5>
+            </div>
+            <div class="text">
+              <h4>後端工程師</h4>
+              <p>做事內容</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </template>
@@ -60,11 +110,6 @@ body {
 .container .left_Side {
   position: relative;
   background: #003147;
-  padding: 40px;
-}
-.container .right_Side {
-  position: relative;
-  background: #fff;
   padding: 40px;
 }
 .profileText {
@@ -130,6 +175,56 @@ body {
 }
 .contactInfo ul li span {
   color: #fff;
-  font-weight: 300;
+  font-weight: 200;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+.contactInfo.education h5 {
+  color: #03a9f4;
+  font-weight: 600;
+}
+.contactInfo.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+}
+.contactInfo.education h4 {
+  color: #fff;
+  font-weight: 200;
+}
+.contactInfo.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: rgb(109, 66, 66);
+  display: block;
+  margin-top: 5px;
+}
+.contactInfo.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #0db79e;
+}
+.container .right_Side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.about{
+  margin-bottom: 50px;
+}
+.about:last-child{
+  margin-bottom: 0;
+}
+.title2{
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p{
+  color:#333
 }
 </style>
